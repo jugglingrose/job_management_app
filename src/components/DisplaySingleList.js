@@ -1,7 +1,10 @@
 import React from 'react';
+import CompanyCard from './CompanyCard';
 
 function DisplaySingleList(props){
-  return <h1>Display Single List</h1>;
+  return <div>
+    <CompanyCard />
+  </div>;
 }
 
 export default DisplaySingleList;
