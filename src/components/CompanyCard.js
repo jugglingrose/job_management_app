@@ -2,6 +2,7 @@ import React from 'react';
 
 class CompanyCard extends React.Component {
   render() {
+    const{addCard, deleteCard, createblank, updateCard} = this.props;
     return (
       <div>
         <h1>Company Card</h1>
@@ -24,7 +25,11 @@ class CompanyCard extends React.Component {
         <label for="Denied">Denied</label>
         <br></br>
         <h3>Notes:</h3>
-        <textarea rows="50" cols="50"></textarea>
+        <textarea rows="20" cols="50"></textarea>
+        <br></br>
+        <button type="submit" onClick={addCard}>Add</button> 
+        <button type="submit" onClick={updateCard}>Update</button> 
+        <button type="submit" onClick={deleteCard}>Delete</button> 
       </div>
     );
   }
